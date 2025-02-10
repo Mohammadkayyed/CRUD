@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "dbe2b46e-d62e-416b-8485-54deca183f7a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31107076"
+	},
+	"item": [
+		{
+			"name": "get all bookshop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/bookshop/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get cities bookshop",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/bookshop/city/Cairo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"city",
+						"Cairo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get name bookshop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/bookshop/name/mohammad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"name",
+						"mohammad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get email bookshop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/bookshop/email/mohammadkayed84@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"email",
+						"mohammadkayed84@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updata name bookshop",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"oldName\": \"ahmad\",\r\n  \"newName\": \"mohammad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/bookshop/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updata eamil bookshop",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"oldEmail\": \"mohammadkaye42@gmail.com\",\r\n  \"newEmail\": \"mohammadkayed84@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/bookshop/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add bookshop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"OneShop23\",\r\n    \"email\": \"oneshop@exampless.com\",\r\n    \"city\": \"Cairo\",\r\n    \"contactNumber\": \"0123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/bookshop/oneshop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"oneshop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete bookshop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shop_id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/bookshop/oneshop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"bookshop",
+						"oneshop"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
